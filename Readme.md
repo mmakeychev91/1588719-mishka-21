@@ -1,11 +1,8 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Михаил Макейчев](https://up.htmlacademy.ru/adaptive/21/user/1588719).
-<<<<<<< HEAD
-* Наставник: Евгений Бервяченок.
-=======
 * Наставник: [Евгений Бервяченок](https://htmlacademy.ru/profile/jackson).
->>>>>>> c28e6c7b68db331b112b5af849598c50703322ad
+
 
 ---
 
