@@ -38,92 +38,92 @@
       Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
     </p>
     <form action="https://echo.htmlacademy.ru/" class="main__form main-form">
-      <fieldset class="main-form__type main-form-type">
-        <legend class="main-form-type__legend legend-main-form">
+      <fieldset class="main-form__fieldset">
+        <legend class="main-form-type__legend">
           Тип
         </legend>
-        <ul class="main-form-type__list">
-          <li class="main-form-type__item">
-            <input class="main-form-type__radio-button" type="radio" name="type" value="interior_accessory" id="type-choice1" checked>
-            <label for="type-choice1" class="main-form-type__label label-main-form" name="type">
+        <ul class="main-form__list">
+          <li class="main-form__item">
+            <input class="main-form__radio radio" type="radio" name="type" value="interior_accessory" id="type-choice1" checked>
+            <label for="type-choice1" class="main-form-type__label label" name="type">
               Аксессуар для интерьера
             </label>
           </li>
-          <li class="main-form-type__item">
-            <input class="main-form-type__radio-button" type="radio" name="type" value="toy" id="type-choice2">
-            <label for="type-choice2" class="main-form-type__label label-main-form" name="type">
+          <li class="main-form__item">
+            <input class="main-form__radio" type="radio" name="type" value="toy" id="type-choice2">
+            <label for="type-choice2" class="main-form__label label" name="type">
               Детская игрушка
             </label>
           </li>
         </ul>
       </fieldset>
-      <fieldset class="main-form__color main-form-color">
-        <legend class="main-form-color__legend legend-main-form">
+      <fieldset class="main-form__fieldset">
+        <legend class="main-form__legend">
           Цвет
         </legend>
-        <ul class="main-form-color__list">
-          <li class="main-form-color__item">
-            <input type="checkbox" class="main-form-color__checkbox" name="color-white" id="filter-color-white">
-            <label for="filter-color-white" class="main-form-color__label label-main-form">Белый</label>
+        <ul class="main-form__list">
+          <li class="main-form__item">
+            <input type="checkbox" class="main-form__checkbox checkbox" name="color-white" id="filter-color-white">
+            <label for="filter-color-white" class="main-form-color__label label">Белый</label>
+          </li>
+          <li class="main-form__item">
+            <input type="checkbox" class="main-form__checkbox checkbox" name="color-gray" id="filter-color-gray">
+            <label for="filter-color-gray" class="main-form-color__label label">Серый</label>
+          </li>
+          <li class="main-form__item">
+            <input type="checkbox" class="main-form__checkbox checkbox" name="color-tiffany" id="filter-color-tiffany">
+            <label for="filter-color-tiffany" class="main-form__label label">«Тиффани»</label>
+          </li>
+          <li class="main-form__item">
+            <input type="checkbox" class="main-form__checkbox checkbox" name="color-black" id="filter-color-black">
+            <label for="filter-color-black" class="main-form__label label">Черный</label>
+          </li>
+          <li class="main-form__item">
+            <input type="checkbox" class="main-form__checkbox checkbox" name="color-pink" id="filter-color-pink">
+            <label for="filter-color-pink" class="main-form__label label">Розовый</label>
           </li>
           <li class="main-form-color__item">
-            <input type="checkbox" class="main-form-color__checkbox" name="color-gray" id="filter-color-gray">
-            <label for="filter-color-gray" class="main-form-color__label label-main-form">Серый</label>
-          </li>
-          <li class="main-form-color__item">
-            <input type="checkbox" class="main-form-color__checkbox" name="color-tiffany" id="filter-color-tiffany">
-            <label for="filter-color-tiffany" class="main-form-color__label label-main-form">«Тиффани»</label>
-          </li>
-          <li class="main-form-color__item">
-            <input type="checkbox" class="main-form-color__checkbox" name="color-black" id="filter-color-black">
-            <label for="filter-color-black" class="main-form-color__label label-main-form">Черный</label>
-          </li>
-          <li class="main-form-color__item">
-            <input type="checkbox" class="main-form-color__checkbox" name="color-pink" id="filter-color-pink">
-            <label for="filter-color-pink" class="main-form-color__label label-main-form">Розовый</label>
-          </li>
-          <li class="main-form-color__item">
-            <input type="checkbox" class="main-form-color__checkbox" name="color-orange" id="filter-color-orange">
-            <label for="filter-color-orange" class="main-form-color__label label-main-form">Оранжевый</label>
+            <input type="checkbox" class="main-form__checkbox checkbox" name="color-orange" id="filter-color-orange">
+            <label for="filter-color-orange" class="main-form__label label">Оранжевый</label>
           </li>
         </ul>
       </fieldset>
-      <fieldset class="main-form__full-name main-form-full-name">
-        <legend class="main-form-full-name__legend legend-main-form">
+      <fieldset class="main-form__fieldset">
+        <legend class="main-form__legend">
           ФИО
         </legend>
-        <ul class="main-form-full-name__list">
-          <li class="main-form-full-name__item">
-            <input type="text" class="main-form-full-name__input" name="name" id="filter-name" required placeholder="Введите ваше имя*">
-            <label for="filter-name" class="main-form-full-name__label label-main-form">Имя:</label>
+        <ul class="main-form__list">
+          <li class="main-form__item">
+            <input type="text" class="main-form__input input" name="name" id="filter-name" required placeholder="Введите ваше имя*">
+            <label for="filter-name" class="main-form__label label">Имя:</label>
           </li>
-          <li class="main-form-full-name__item">
-            <input type="text" class="main-form-full-name__input" name="surname" id="filter-surname" required placeholder="Укажите фамилию*">
-            <label for="filter-surname" class="main-form-full-name__label label-main-form">Фамилия:</label>
+          <li class="main-forme__item">
+            <input type="text" class="main-form__input input" name="surname" id="filter-surname" required placeholder="Укажите фамилию*">
+            <label for="filter-surname" class="main-form__label label">Фамилия:</label>
           </li>
-          <li class="main-form-full-name__item">
-            <input type="text" class="main-form-full-name__input" name="patronymic" id="filter-patronymic" placeholder="Отчество, если желаете">
-            <label for="filter-patronymic" class="main-form-full-name__label label-main-form">Отчество:</label>
+          <li class="main-form__item">
+            <input type="text" class="main-form__input input" name="patronymic" id="filter-patronymic" placeholder="Отчество, если желаете">
+            <label for="filter-patronymic" class="main-form__label label">Отчество:</label>
           </li>
         </ul>
       </fieldset>
-      <fieldset class="main-form__telephone main-form-telephone">
-        <legend class="main-form-telephone__legend legend-main-form">
+      <fieldset class="main-form__fieldset">
+        <legend class="main-form__legend">
           Тел
         </legend>
-        <input type="tel" class="main-form-telephone__input" required placeholder="+7 ХХХ ХХХ ХХ ХХ*" name="tel">
+        <input type="tel" class="main-form__input input" required placeholder="+7 ХХХ ХХХ ХХ ХХ*" name="tel">
       </fieldset>
-      <fieldset class="main-form__e-mail main-form-e-mail">
-        <legend class="main-form-e-mail__legend legend-main-form">
+      <fieldset class="main-form__fieldset">
+        <legend class="main-form__legend">
           Тел
         </legend>
-        <input type="email" class="main-form-e-mail__input" required placeholder="Ваш Email*" name="e-mail">
+        <input type="email" class="main-form__input input" required placeholder="Ваш Email*" name="e-mail">
       </fieldset>
-      <fieldset class="main-form__extra main-form-extra">
-        <legend class="main-form-extra__legend legend-main-form">
+      <fieldset class="main-form__fieldset">
+        <legend class="main-form__legend">
           Доп
         </legend>
-        <input type="text" class="main-form-extra__input" placeholder="Опишите все ваши пожелания к заказу" name="extra" size="100%">
+        <input type="text" class="main-form__input input" placeholder="Опишите все ваши пожелания к заказу" name="extra" size="100%">
       </fieldset>
       <p class="main-form__text">
         *Поля обязательны для заполнения
