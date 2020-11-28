@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Вязание на заказ</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -39,13 +40,13 @@
     </p>
     <form action="https://echo.htmlacademy.ru/" class="main__form main-form">
       <fieldset class="main-form__fieldset">
-        <legend class="main-form-type__legend">
+        <legend class="main-form__legend">
           Тип
         </legend>
         <ul class="main-form__list">
           <li class="main-form__item">
             <input class="main-form__radio radio" type="radio" name="type" value="interior_accessory" id="type-choice1" checked>
-            <label for="type-choice1" class="main-form-type__label label" name="type">
+            <label for="type-choice1" class="main-form__label label" name="type">
               Аксессуар для интерьера
             </label>
           </li>
@@ -64,11 +65,11 @@
         <ul class="main-form__list">
           <li class="main-form__item">
             <input type="checkbox" class="main-form__checkbox checkbox" name="color-white" id="filter-color-white">
-            <label for="filter-color-white" class="main-form-color__label label">Белый</label>
+            <label for="filter-color-white" class="main-form__label label">Белый</label>
           </li>
           <li class="main-form__item">
             <input type="checkbox" class="main-form__checkbox checkbox" name="color-gray" id="filter-color-gray">
-            <label for="filter-color-gray" class="main-form-color__label label">Серый</label>
+            <label for="filter-color-gray" class="main-form__label label">Серый</label>
           </li>
           <li class="main-form__item">
             <input type="checkbox" class="main-form__checkbox checkbox" name="color-tiffany" id="filter-color-tiffany">
@@ -82,7 +83,7 @@
             <input type="checkbox" class="main-form__checkbox checkbox" name="color-pink" id="filter-color-pink">
             <label for="filter-color-pink" class="main-form__label label">Розовый</label>
           </li>
-          <li class="main-form-color__item">
+          <li class="main-form__item">
             <input type="checkbox" class="main-form__checkbox checkbox" name="color-orange" id="filter-color-orange">
             <label for="filter-color-orange" class="main-form__label label">Оранжевый</label>
           </li>
@@ -97,7 +98,7 @@
             <input type="text" class="main-form__input input" name="name" id="filter-name" required placeholder="Введите ваше имя*">
             <label for="filter-name" class="main-form__label label">Имя:</label>
           </li>
-          <li class="main-forme__item">
+          <li class="main-form__item">
             <input type="text" class="main-form__input input" name="surname" id="filter-surname" required placeholder="Укажите фамилию*">
             <label for="filter-surname" class="main-form__label label">Фамилия:</label>
           </li>
