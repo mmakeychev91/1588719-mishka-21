@@ -1,34 +1,58 @@
-// Начните писать стили здесь
-@import "header.scss";
-@import "nav.scss";
-@import "main.scss";
-@import "product.scss";
-@import "title-catalog.scss";
-@import "text-catalog.scss";
-@import "video.scss";
-@import "button-of-main.scss";
-@import "footer.scss";
-@import "social.scss";
-@import "visually-hidden.scss";
-@import "copyright.scss";
-@import "modal.scss";
-@import "modal-form.scss";
-@import "types-of-products.scss";
-@import "product-of-week.scss";
-@import "parameters.scss";
-@import "features.scss";
-@import "reviews.scss";
-@import "author.scss";
-@import "control.scss";
-@import "contacts.scss";
-@import "e-mail.scss";
-@import "address.scss";
-@import "contact-address.scss";
-@import "main-form.scss";
-@import "radio.scss";
-@import "label.scss";
-@import "checkbox.scss";
-@import "input.scss";
+//Шрифты
+
+@font-face {
+  font-family: "Open Sans", sans-serif;
+  src: url ("../fonts/opensans.woff2") format("woff2");
+  src: url ("../fonts/opensans.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+
+}
+@font-face {
+  font-family: "Open Sans", sans-serif;
+  src: url ("../fonts/opensansbold.woff2") format("woff2");
+  src: url ("../fonts/opensansbold.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+
+}
+//Прочее
+@import "normalize.scss";
+@import "styling-by-tags.scss";
+
+//Переменные
+//Цвета
 @import "colors.scss";
 
-
+//Блоки
+@import "blocks/title.scss";
+@import "blocks/header.scss";
+@import "blocks/nav.scss";
+@import "blocks/main.scss";
+@import "blocks/product.scss";
+@import "blocks/title-catalog.scss";
+@import "blocks/text-catalog.scss";
+@import "blocks/video.scss";
+@import "blocks/button-of-main.scss";
+@import "blocks/footer.scss";
+@import "blocks/social.scss";
+@import "blocks/visually-hidden.scss";
+@import "blocks/copyright.scss";
+@import "blocks/modal.scss";
+@import "blocks/modal-form.scss";
+@import "blocks/types-of-products.scss";
+@import "blocks/product-of-week.scss";
+@import "blocks/parameters.scss";
+@import "blocks/features.scss";
+@import "blocks/reviews.scss";
+@import "blocks/author.scss";
+@import "blocks/control.scss";
+@import "blocks/contacts.scss";
+@import "blocks/e-mail.scss";
+@import "blocks/address.scss";
+@import "blocks/contact-address.scss";
+@import "blocks/main-form.scss";
+@import "blocks/radio.scss";
+@import "blocks/label.scss";
+@import "blocks/checkbox.scss";
+@import "blocks/input.scss";
