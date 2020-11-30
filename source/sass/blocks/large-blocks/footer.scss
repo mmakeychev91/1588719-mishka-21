@@ -1,8 +1,9 @@
 .footer{
-  padding: 0;
-  margin: 0;
-min-width: 320px;
-  background-color: #F1F1F1;
+
+
+min-width: 380px;
+
+  background-color: $background_footer;
       outline: 5px solid rgb(202, 102, 194);
   outline-offset: -5px;
 }

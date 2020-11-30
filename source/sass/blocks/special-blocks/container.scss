@@ -1,0 +1,31 @@
+.container {
+  min-width: 380px;
+  margin: 0 auto;
+  padding: 0 30px;
+  outline: 5px solid rgb(0, 0, 0);
+  outline-offset: -5px;
+
+  &--main-title {
+    background-image: url("../img/background-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+  }
+
+  &--light-green {
+    background-color: $basic-light-green;
+  }
+
+  &--dark-green {
+    background-color: $basic-dark-green;
+  }
+
+  &--button-for-main {
+    padding: 42px 30px 39px 30px;
+  }
+
+  &--footer {
+    padding: 29px 70px 32px 70px;
+  }
+
+}
