@@ -1,26 +1,30 @@
-.product-of-week{
-    outline: 5px solid rgb(502, 1555, 94);
+.product-of-week {
+  outline: 5px solid rgb(502, 1555, 94);
   outline-offset: -5px;
   padding: 31px 0 36px 0;
 }
-.product-of-week__subtitle{
+
+.product-of-week__subtitle {
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
   color: $basic-light-green;
   text-transform: uppercase;
 }
-.product-of-week__lead{
+
+.product-of-week__lead {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
 }
-.product-of-week__list{
+
+.product-of-week__list {
   font-weight: 400;
   font-size: 15px;
   line-height: 20px;
 }
-.product-of-week__text{
+
+.product-of-week__text {
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;

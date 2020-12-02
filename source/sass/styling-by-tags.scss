@@ -1,6 +1,7 @@
-body{
+body {
   font-family: "Open Sans", "Arial", sans-serif;
 }
+
 input,
 button,
 textarea,
@@ -26,15 +27,10 @@ dd {
   margin: 0;
 }
 
-/* Убираем внутренние отступы */
+/* Убираем внутренние отступы , Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
 ul[class],
 ol[class] {
   padding: 0;
-}
-
-/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
-ul[class],
-ol[class] {
   list-style: none;
 }
 

@@ -1,19 +1,22 @@
-.contacts{
-        outline: 5px solid rgb(502, 2, 94);
+.contacts {
+  outline: 5px solid rgb(502, 2, 94);
   outline-offset: -5px;
   padding: 38px 0 62px 0;
 }
-.contacts__title{
+
+.contacts__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
 }
-.contacts__e-mail{
+
+.contacts__e-mail {
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
 }
-.contacts__address{
+
+.contacts__address {
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
