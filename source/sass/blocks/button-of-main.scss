@@ -1,7 +1,11 @@
 .button-of-main {
+  padding: 16px 70px;
+  font: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   text-transform: uppercase;
   color: $text_button;
+  background: none;
+  border: 2px solid $basic-gray;
 }

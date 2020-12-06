@@ -13,10 +13,17 @@
   outline-offset: -5px;
 }
 
+.types-of-products__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 .types-of-products__item {
   outline: 5px solid red;
   outline-offset: -5px;
   padding: 24px 0 31px 0;
+  margin: 0;
 }
 
 .types-of-products__link {
