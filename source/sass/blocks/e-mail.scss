@@ -1,9 +1,17 @@
-.e-mail {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: start;
-}
-
 .e-mail__type-of-contact {
   padding-right: 80px;
+}
+
+.e-mail__contact {
+  color: $basic-gray;
+  border-bottom: 1px solid $bright-green;
+
+  &:hover {
+    color: $special-dark-green;
+    border-bottom: 1px solid $special-dark-green;
+  }
+
+  &:active {
+    border-bottom: 1px solid $pale-green;
+  }
 }
