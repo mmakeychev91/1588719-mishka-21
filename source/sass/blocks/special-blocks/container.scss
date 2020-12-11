@@ -1,0 +1,42 @@
+.container {
+  min-width: 380px;
+  margin: 0 auto;
+  padding: 0 30px;
+  outline: 5px solid rgb(0, 0, 0);
+  outline-offset: -5px;
+
+  &--main-title {
+    background-image: url("../img/background-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+  }
+
+  &--light-green {
+    padding: 24px 30px 31px 30px;
+    background-color: $basic-light-green;
+  }
+
+  &--light-green:hover {
+    padding: 24px 30px 36px 30px;
+    background-color: $special-light-green;
+  }
+
+  &--dark-green {
+    padding: 24px 30px 31px 30px;
+    background-color: $basic-dark-green;
+  }
+
+  &--dark-green:hover {
+    padding: 24px 30px 36px 30px;
+    background-color: $special-dark-green;
+  }
+
+  &--button-for-main {
+    padding: 42px 30px 39px 30px;
+  }
+
+  &--footer {
+    padding: 29px 69px 32px 69px;
+  }
+}

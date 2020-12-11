@@ -3,6 +3,7 @@
 * Студент: [Михаил Макейчев](https://up.htmlacademy.ru/adaptive/21/user/1588719).
 * Наставник: [Евгений Бервяченок](https://htmlacademy.ru/profile/jackson).
 
+
 ---
 
 **Обратите внимание, что папка с вашими исходными файлами — `source/`.**

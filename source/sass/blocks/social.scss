@@ -1,0 +1,18 @@
+.social {
+  outline: 5px solid rgb(202, 102, 194);
+  outline-offset: -5px;
+}
+
+.social__list {
+  padding: 0 29px;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social__item {
+  margin: 0;
+}
