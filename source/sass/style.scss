@@ -1,1 +1,56 @@
-// Начните писать стили здесь
+//Шрифты
+@font-face {
+  font-family: "Open Sans", sans-serif;
+  src: url ("../fonts/opensans.woff2") format("woff2");
+  src: url ("../fonts/opensans.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans", sans-serif;
+  src: url ("../fonts/opensansbold.woff2") format("woff2");
+  src: url ("../fonts/opensansbold.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+}
+
+//Прочее
+@import "styling-by-tags.scss";
+//Переменные
+//Цвета
+@import "colors.scss";
+//Блоки
+@import "blocks/color.scss";
+@import "blocks/type.scss";
+@import "blocks/special-blocks/container.scss";
+@import "blocks/title.scss";
+@import "blocks/large-blocks/header.scss";
+@import "blocks/nav.scss";
+@import "blocks/large-blocks/main.scss";
+@import "blocks/product.scss";
+@import "blocks/title-catalog.scss";
+@import "blocks/text-catalog.scss";
+@import "blocks/video.scss";
+@import "blocks/button-of-main.scss";
+@import "blocks/large-blocks/footer.scss";
+@import "blocks/social.scss";
+@import "blocks/special-blocks/visually-hidden.scss";
+@import "blocks/copyright.scss";
+@import "blocks/modal.scss";
+@import "blocks/modal-form.scss";
+@import "blocks/large-blocks/index/types-of-products.scss";
+@import "blocks/large-blocks/index/product-of-week.scss";
+@import "blocks/parameters.scss";
+@import "blocks/large-blocks/index/features.scss";
+@import "blocks/large-blocks/index/reviews.scss";
+@import "blocks/author.scss";
+@import "blocks/control.scss";
+@import "blocks/large-blocks/index/contacts.scss";
+@import "blocks/e-mail.scss";
+@import "blocks/address.scss";
+@import "blocks/main-form.scss";
+@import "blocks/radio.scss";
+@import "blocks/label.scss";
+@import "blocks/checkbox.scss";
+@import "blocks/input.scss";

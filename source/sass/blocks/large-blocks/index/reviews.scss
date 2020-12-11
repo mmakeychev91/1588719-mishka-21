@@ -1,0 +1,16 @@
+.reviews {
+  outline: 5px solid rgb(202, 102, 194);
+  outline-offset: -5px;
+  padding: 29px 0 45px 0;
+}
+
+.reviews__text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  color: $basic-gray;
+}
+
+.reviews__control {
+  margin-bottom: 38px;
+}

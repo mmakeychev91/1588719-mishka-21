@@ -1,0 +1,14 @@
+.copyright {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  outline: 5px solid rgb(202, 202, 194);
+  outline-offset: -5px;
+}
+
+.copyright__title {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 18px;
+}
