@@ -1,0 +1,17 @@
+.main-form {
+  outline: 5px solid rgb(102, 51, 204);
+  outline-offset: -5px;
+}
+
+.main-form__fieldset {
+  outline: 5px solid rgb(102, 51, 204);
+  outline-offset: -5px;
+  border: 0;
+  padding: 29px 0;
+}
+
+.main-form__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

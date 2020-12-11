@@ -1,3 +1,13 @@
 .label {
-  padding-left: 61px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+
+  &--radio {
+    padding-left: 69px;
+  }
+
+  &--checkbox {
+    padding-left: 69px;
+  }
 }

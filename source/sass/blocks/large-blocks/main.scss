@@ -12,4 +12,24 @@
 .main__intro {
   outline: 5px solid rgb(902, 2, 94);
   outline-offset: -5px;
+  min-width: 380px;
+  background-color: $basic-light-gray;
+}
+
+.main__title {
+  outline: 5px solid rgb(102, 51, 204);
+  outline-offset: -5px;
+  padding: 74px 7px 74px 9px;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+}
+
+.main__text {
+  color: $basic-gray;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  outline: 5px solid rgb(102, 51, 204);
+  outline-offset: -5px;
 }
