@@ -19,6 +19,7 @@
 .main__title {
   outline: 5px solid rgb(102, 51, 204);
   outline-offset: -5px;
+  margin: 0;
   padding: 74px 7px 74px 9px;
   font-weight: 700;
   font-size: 27px;
@@ -26,6 +27,8 @@
 }
 
 .main__text {
+  margin: 0;
+  padding: 17px 0;
   color: $basic-gray;
   font-weight: 400;
   font-size: 13px;

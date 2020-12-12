@@ -86,34 +86,34 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="main-form__fieldset">
+        <fieldset class="main-form__fieldset main-form__fieldset--full-name">
           <legend class="main-form__legend legend"> ФИО </legend>
           <ul class="main-form__list">
             <li class="main-form__item">
-              <input type="text" class="main-form__input input" name="name" id="filter-name" required placeholder="Введите ваше имя*">
               <label for="filter-name" class="main-form__label label">Имя:</label>
+              <input type="text" class="main-form__input input input--full-name" name="name" id="filter-name" required placeholder="Введите ваше имя*">
             </li>
             <li class="main-form__item">
-              <input type="text" class="main-form__input input" name="surname" id="filter-surname" required placeholder="Укажите фамилию*">
               <label for="filter-surname" class="main-form__label label">Фамилия:</label>
+              <input type="text" class="main-form__input input input--full-name" name="surname" id="filter-surname" required placeholder="Укажите фамилию*">
             </li>
             <li class="main-form__item">
-              <input type="text" class="main-form__input input" name="patronymic" id="filter-patronymic" placeholder="Отчество, если желаете">
               <label for="filter-patronymic" class="main-form__label label">Отчество:</label>
+              <input type="text" class="main-form__input input input--full-name" name="patronymic" id="filter-patronymic" placeholder="Отчество, если желаете">
             </li>
           </ul>
         </fieldset>
-        <fieldset class="main-form__fieldset">
+        <fieldset class="main-form__fieldset main-form__fieldset--tel">
           <legend class="main-form__legend legend"> Тел </legend>
-          <input type="tel" class="main-form__input input" required placeholder="+7 ХХХ ХХХ ХХ ХХ*" name="tel">
+          <input type="tel" class="main-form__input input input--tel" required placeholder="+7 ХХХ ХХХ ХХ ХХ*" name="tel">
         </fieldset>
-        <fieldset class="main-form__fieldset">
+        <fieldset class="main-form__fieldset main-form__fieldset--e-mail">
           <legend class="main-form__legend legend"> E-mail </legend>
-          <input type="email" class="main-form__input input" required placeholder="Ваш Email*" name="e-mail">
+          <input type="email" class="main-form__input input input--e-mail" required placeholder="Ваш Email*" name="e-mail">
         </fieldset>
-        <fieldset class="main-form__fieldset">
+        <fieldset class="main-form__fieldset main-form__fieldset--extra">
           <legend class="main-form__legend legend"> Доп </legend>
-          <input type="text" class="main-form__input input" placeholder="Опишите все ваши пожелания к заказу" name="extra">
+          <input type="text" class="main-form__input input input--extra" placeholder="Опишите все ваши пожелания к заказу" name="extra">
         </fieldset>
         <p class="main-form__text"> *Поля обязательны для заполнения </p>
         <button type="submit" class="main-form__button button-of-main"> <span>Отправить заказ</span> </button>

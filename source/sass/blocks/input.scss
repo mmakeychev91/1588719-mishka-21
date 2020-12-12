@@ -5,4 +5,31 @@
   font-size: 17px;
   line-height: 18px;
   border: none;
+
+  &::placeholder {
+    color: $basic-black;
+    opacity: 0.3;
+  }
+
+  &--full-name {
+    padding: 17px 0;
+    border-bottom: 2px solid $basic-black;
+  }
+
+  &--tel {
+    padding: 17px 0 18px 0;
+    border-bottom: 2px solid $basic-black;
+  }
+
+  &--e-mail {
+    padding: 18px 0 16px 0;
+    border-bottom: 2px solid $basic-black;
+  }
+
+  &--extra {
+    min-height: 142px;
+    box-sizing: border-box;
+    padding: 17px 17px 17px 17px;
+    border: 2px solid $basic-gray;
+  }
 }
