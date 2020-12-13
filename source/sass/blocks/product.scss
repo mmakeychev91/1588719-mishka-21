@@ -1,4 +1,14 @@
-.product {
-  //добавлю временные отступы, чтобы сборка не ругалась на пустой файл
-  padding-bottom: 1px;
+.product__price {
+  margin: 0;
+  padding: 0 34px 0 26px;
+  color: $text_color;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.product__buy {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }

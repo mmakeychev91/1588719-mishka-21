@@ -36,3 +36,19 @@
   outline: 5px solid rgb(102, 51, 204);
   outline-offset: -5px;
 }
+
+.main__list {
+
+  margin: 0;
+  padding: 28px 0;
+  list-style: none;
+}
+
+.main__item {
+  margin-bottom: 54px;
+  border: 1px solid $special-gray;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

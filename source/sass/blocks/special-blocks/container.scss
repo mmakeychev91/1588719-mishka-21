@@ -5,6 +5,10 @@
   outline: 5px solid rgb(0, 0, 0);
   outline-offset: -5px;
 
+  &--catalog-item {
+    padding: 26px 28px 55px 5px;
+  }
+
   &--main-title {
     background-image: url("../img/background-img.jpg");
     background-repeat: no-repeat;
