@@ -1,5 +1,4 @@
 .button-of-main {
-  max-padding-bottom: 16px;
   padding: 16px 70px;
   font: inherit;
   font-weight: 700;
@@ -7,6 +6,7 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $text_button;
+  cursor: pointer;
   background: none;
   border: 2px solid $basic-gray;
 
@@ -22,5 +22,14 @@
     span {
       opacity: 0.3;
     }
+  }
+
+  &--catalog {
+    margin-bottom: 39px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 0;
+    padding-left: 0;
+    min-width: 100%;
   }
 }

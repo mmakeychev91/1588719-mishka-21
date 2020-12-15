@@ -1,4 +1,7 @@
 .text-catalog {
-  //добавлю временные отступы, чтобы сборка не ругалась на пустой файл
-  padding-bottom: 1px;
+  margin: 0;
+  color: $basic-gray;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 30px;
 }

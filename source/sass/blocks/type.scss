@@ -1,4 +1,9 @@
 .type {
-  //добавлю временные отступы, чтобы сборка не ругалась на пустой файл
-  padding-bottom: 1px;
+  padding: 33px 0 41px 0;
+}
+
+.type__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }

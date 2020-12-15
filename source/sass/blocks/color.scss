@@ -1,4 +1,18 @@
+.color {
+  padding: 33px 0 41px 0;
+}
+
+.color__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .color__item {
   position: relative;
-  margin: 33px 0;
+  margin: 0 0 33px 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
