@@ -5,6 +5,7 @@
   font-size: 17px;
   line-height: 18px;
   border: none;
+  outline: none;
 
   &::placeholder {
     color: $basic-black;
@@ -27,9 +28,10 @@
   }
 
   &--extra {
+    resize: none;
     min-height: 142px;
     box-sizing: border-box;
-    padding: 17px 17px 17px 17px;
+    padding: 17px;
     border: 2px solid $basic-gray;
   }
 }

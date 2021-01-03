@@ -2,4 +2,31 @@
   padding: 25px 0 28px 0;
   outline: 5px solid rgb(102, 51, 204);
   outline-offset: -5px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.header picture {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (min-width: 768px) {
+  .header picture {
+    left: 7%;
+  }
+}
+
+@media (min-width: 1150px) {
+  .header picture {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.header__button {
+  flex: 0 1 auto;
+  margin-left: auto;
 }

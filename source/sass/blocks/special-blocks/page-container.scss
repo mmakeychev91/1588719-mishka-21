@@ -1,0 +1,59 @@
+.page-container {
+  outline: 5px solid rgb(255, 160, 122);
+  outline-offset: -5px;
+  max-width: 1150px;
+  margin: 0 auto;
+  width: 100%;
+  flex: 0 0 auto;
+
+  &--light-green {
+    padding: 24px 30px 31px 30px;
+    background-color: $basic-light-green;
+  }
+
+  &--light-green:hover {
+    padding: 24px 30px 36px 30px;
+    background-color: $special-light-green;
+  }
+
+  &--dark-green {
+    padding: 24px 30px 31px 30px;
+    background-color: $basic-dark-green;
+  }
+
+  &--dark-green:hover {
+    padding: 24px 30px 36px 30px;
+    background-color: $special-dark-green;
+  }
+
+  @media (min-width: 768px) {
+    &--light-green {
+      padding: 24px 50px 31px 50px;
+      background-color: $basic-light-green;
+    }
+
+    &--dark-green {
+      padding: 24px 50px 31px 50px;
+      background-color: $basic-dark-green;
+    }
+  }
+}
+
+@media (min-width: 768px) and (min-resolution: 2dppx) {
+  .page-container--type-of-products {
+    background-image: url("../img/desktop/hero-desktop@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-container--type-of-products {
+    position: relative;
+    background-image: url("../img/desktop/hero-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+  }
+}

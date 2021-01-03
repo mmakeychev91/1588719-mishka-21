@@ -21,6 +21,8 @@
 //Цвета
 @import "colors.scss";
 //Блоки
+@import "blocks/special-blocks/contacts-container.scss";
+@import "blocks/large-blocks/page.scss";
 @import "blocks/legend.scss";
 @import "blocks/color.scss";
 @import "blocks/type.scss";
@@ -30,6 +32,7 @@
 @import "blocks/large-blocks/header.scss";
 @import "blocks/nav.scss";
 @import "blocks/large-blocks/main.scss";
+@import "blocks/special-blocks/page-container.scss";
 @import "blocks/product.scss";
 @import "blocks/title-catalog.scss";
 @import "blocks/text-catalog.scss";

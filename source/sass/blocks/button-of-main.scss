@@ -1,5 +1,6 @@
 .button-of-main {
-  padding: 16px 70px;
+  width: 100%;
+  padding: 16px 0;
   font: inherit;
   font-weight: 700;
   font-size: 18px;
@@ -31,5 +32,11 @@
     padding-right: 0;
     padding-left: 0;
     min-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .button-of-main {
+    font-size: 17px;
   }
 }

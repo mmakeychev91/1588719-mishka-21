@@ -4,6 +4,27 @@
   padding: 29px 0 45px 0;
 }
 
+@media (min-width: 768px) {
+  .reviews {
+    display: grid;
+  }
+}
+
+@media (min-width: 1150px) and (min-resolution: 2dppx) {
+  .reviews {
+    padding-left: 174px;
+    background-image: url("../img/genaral/review@2x.jpg");
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 1150px) {
+  .reviews {
+    background-image: url("../img/genaral/review.jpg");
+    background-repeat: no-repeat;
+  }
+}
+
 .reviews__text {
   font-weight: 400;
   font-size: 15px;
@@ -11,6 +32,48 @@
   color: $basic-gray;
 }
 
+@media (min-width: 768px) {
+  .reviews__text {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .reviews__author {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+}
+
 .reviews__control {
   margin-bottom: 38px;
+}
+
+@media (min-width: 768px) {
+  .reviews__control {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+}
+
+.reviews__button {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .reviews__button {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+}
+
+@media (min-width: 768px) {
+  .reviews__title {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
 }

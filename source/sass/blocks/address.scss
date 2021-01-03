@@ -1,9 +1,14 @@
 .address {
   display: flex;
   flex-wrap: wrap;
-  justify-content: start;
+  flex-direction: row;
+  width: 100%;
 }
 
 .address__type-of-contact {
-  padding-right: 80px;
+  width: 29%;
+}
+
+.address__contact {
+  width: 71%;
 }

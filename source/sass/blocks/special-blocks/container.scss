@@ -1,42 +1,66 @@
 .container {
   outline: 5px solid rgb(0, 0, 0);
   outline-offset: -5px;
-  min-width: 380px;
   margin: 0 auto;
+  min-width: 320px;
   padding: 0 30px;
-
-  &--main-title {
-    background-image: url("../img/background-img.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50%;
-  }
-
-  &--light-green {
-    padding: 24px 30px 31px 30px;
-    background-color: $basic-light-green;
-  }
-
-  &--light-green:hover {
-    padding: 24px 30px 36px 30px;
-    background-color: $special-light-green;
-  }
-
-  &--dark-green {
-    padding: 24px 30px 31px 30px;
-    background-color: $basic-dark-green;
-  }
-
-  &--dark-green:hover {
-    padding: 24px 30px 36px 30px;
-    background-color: $special-dark-green;
-  }
-
-  &--button-for-main {
-    padding: 42px 30px 39px 30px;
-  }
 
   &--footer {
     padding: 29px 69px 32px 69px;
+  }
+}
+
+.container--button-for-main {
+  padding: 42px 30px 39px 30px;
+}
+
+@media (min-width: 1150px) {
+  .container--button-for-main {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+}
+
+@media (min-width: 768px) {
+  .container--button-for-main {
+    margin: 55px 0 57px 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 50px;
+  }
+}
+
+.container--reviews {
+  padding: 0;
+}
+
+@media (min-width: 768px) and (min-resolution: 2dppx) {
+  .container--reviews {
+    background-image: url("../img/genaral/review@2x.jpg");
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 768px) {
+  .container--reviews {
+    padding: 0;
+    background-image: url("../img/genaral/review.jpg");
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 1150px) {
+  .container--reviews {
+    background-image: none;
+  }
+}
+
+@media (min-width: 1150px) {
+  .container--contacts {
+    grid-column: 1/2;
+    grid-row: 1/2;
   }
 }
