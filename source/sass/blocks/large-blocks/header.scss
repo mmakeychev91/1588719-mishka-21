@@ -26,6 +26,24 @@
   }
 }
 
+@media (max-width: 767px) {
+  .header--form-and-catalog picture {
+    bottom: 20%;
+  }
+}
+
+@media (min-width: 768px) {
+  .header--form-and-catalog picture {
+    bottom: 10%;
+  }
+}
+
+@media (min-width: 1150px) {
+  .header--form-and-catalog picture {
+    bottom: -12%;
+  }
+}
+
 .header__button {
   flex: 0 1 auto;
   margin-left: auto;

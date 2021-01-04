@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -9,31 +9,37 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-  <div class="container">
-    <header class="header">
-      <a href="index.html" class="header__link">
-        <img src="img/mobile/files/mishka-logo-mobile.svg" width="86" height="32" alt="Логотип" class="header__logo">
-      </a>
-      <button class="header__button" aria-label="Меню">
-      </button>
-      <nav class="header__nav nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="catalog.html" class="nav__link">Каталог товаров</a>
-          </li>
-          <li class="nav__item">
-            <a href="form.html" class="nav__link">Вязание на заказ</a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">Поиск по сайту</a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">Корзина: пока пусто</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+<body class="page__body">
+  <div class="page-container">
+    <div class="container">
+      <header class="header">
+        <a href="index.html" class="header__link">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/desktop/files/mishka-logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/tablet/files/mishka-logo-tablet.svg">
+            <img src="img/mobile/files/mishka-logo-mobile.svg" alt="Логотип" class="header__logo">
+          </picture>
+        </a>
+        <button class="header__button" aria-label="Меню">
+        </button>
+        <nav class="header__nav nav visually-hidden">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="catalog.html" class="nav__link">Каталог товаров</a>
+            </li>
+            <li class="nav__item">
+              <a href="form.html" class="nav__link">Вязание на заказ</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Поиск по сайту</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Корзина: пока пусто</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
   </div>
   <main class="main">
     <div class="main__intro">
