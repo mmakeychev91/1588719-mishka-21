@@ -4,9 +4,17 @@
   margin: 0 auto;
   min-width: 320px;
   padding: 0 30px;
+}
 
-  &--footer {
-    padding: 29px 69px 32px 69px;
+.container--footer {
+  padding: 29px 69px 32px 69px;
+}
+
+@media (min-width: 768px) {
+  .container--footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
   }
 }
 
