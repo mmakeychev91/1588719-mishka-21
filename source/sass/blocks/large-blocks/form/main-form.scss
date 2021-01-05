@@ -40,6 +40,19 @@
   }
 }
 
+@media (min-width: 768px) {
+  .main-form__item {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1150px) {
+  .main-form__item {
+    margin-right: 175px;
+  }
+}
+
 .main-form__text {
   outline: 5px solid rgb(102, 201, 204);
   outline-offset: -5px;
@@ -63,4 +76,9 @@
   .main-form__text {
     margin-right: 175px;
   }
+}
+
+.main-form__label {
+  outline: 5px solid rgb(102, 201, 204);
+  outline-offset: -5px;
 }
