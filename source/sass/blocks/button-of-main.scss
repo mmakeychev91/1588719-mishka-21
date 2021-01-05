@@ -36,7 +36,18 @@
 }
 
 @media (min-width: 768px) {
-  .button-of-main {
+  .button-of-main--sending-of-order {
+    width: 34%;
+    order: 1;
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .button-of-main--sending-of-order {
+    margin-left: 180px;
+    width: 34%;
+    order: 1;
     font-size: 17px;
   }
 }

@@ -41,5 +41,15 @@
 @media (min-width: 768px) {
   .input {
     width: auto;
+
+    &::placeholder {
+      font-size: 19px;
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  .input--extra {
+    margin-right: 175px;
   }
 }

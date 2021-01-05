@@ -91,6 +91,12 @@
   }
 }
 
+@media (min-width: 1150px) {
+  .main__text {
+    padding: 0 175px;
+  }
+}
+
 .main__list {
   margin: 0;
   padding: 28px 0;

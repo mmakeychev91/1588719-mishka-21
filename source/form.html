@@ -154,15 +154,16 @@
       </fieldset>
       <div class="page-container">
         <div class="container">
-          <div class="fieldset-container">
-            <fieldset class="main-form__fieldset main-form__fieldset--extra">
+          <fieldset class="main-form__fieldset main-form__fieldset--extra">
+            <div class="fieldset-container">
               <legend class="main-form__legend legend"> Доп </legend>
-              <textarea class="main-form__textarea input input--extra userfield" placeholder="Опишите все ваши пожелания к заказу" name="extra">
-          </textarea>
-          </div>
+              <textarea class="main-form__textarea input input--extra user-field" placeholder="Опишите все ваши пожелания к заказу" name="extra"></textarea>
+            </div>
           </fieldset>
-          <p class="main-form__text"> *Поля обязательны для заполнения </p>
-          <button type="submit" class="main-form__button button-of-main"> <span>Отправить заказ</span> </button>
+          <div class="form-container">
+            <p class="main-form__text"> *Поля обязательны для заполнения </p>
+            <button type="submit" class="main-form__button button-of-main button-of-main--sending-of-order"> <span>Отправить заказ</span> </button>
+          </div>
         </div>
       </div>
     </form>

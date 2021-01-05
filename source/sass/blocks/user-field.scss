@@ -1,5 +1,11 @@
 @media (min-width: 768px) {
   .user-field {
-    flex: 1 1 auto;
+    flex: 1 1 75%;
+  }
+}
+
+@media (min-width: 1150px) {
+  .user-field {
+    flex: 1 1 66%;
   }
 }

@@ -50,3 +50,17 @@
   line-height: 16px;
   color: $basic-gray;
 }
+
+@media (min-width: 768px) {
+  .main-form__text {
+    order: 2;
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .main-form__text {
+    margin-right: 175px;
+  }
+}
