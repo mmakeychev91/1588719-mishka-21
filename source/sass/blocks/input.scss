@@ -37,3 +37,9 @@
     border: 2px solid $basic-gray;
   }
 }
+
+@media (min-width: 768px) {
+  .input {
+    width: auto;
+  }
+}

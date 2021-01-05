@@ -5,3 +5,9 @@
   font-size: 17px;
   line-height: 16px;
 }
+
+@media (min-width: 768px) {
+  .legend {
+    flex: 0 1 25%;
+  }
+}

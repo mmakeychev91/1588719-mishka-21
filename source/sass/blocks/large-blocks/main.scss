@@ -53,9 +53,24 @@
   outline-offset: -5px;
   margin: 0;
   padding: 74px 7px 74px 9px;
+  text-align: center;
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;
+}
+
+@media (min-width: 768px) {
+  .main__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .main__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .main__text {
@@ -67,6 +82,13 @@
   line-height: 24px;
   outline: 5px solid rgb(102, 51, 204);
   outline-offset: -5px;
+}
+
+@media (min-width: 768px) {
+  .main__text {
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 
 .main__list {
