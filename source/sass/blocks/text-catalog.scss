@@ -6,3 +6,9 @@
   font-size: 13px;
   line-height: 30px;
 }
+
+@media (min-width: 768px) {
+  .text-catalog {
+    font-size: 15px;
+  }
+}
