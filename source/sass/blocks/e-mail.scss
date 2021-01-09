@@ -1,10 +1,19 @@
+.e-mail {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+}
+
 .e-mail__type-of-contact {
-  padding-right: 80px;
+  width: 29%;
 }
 
 .e-mail__contact {
   color: $basic-gray;
   border-bottom: 1px solid $bright-green;
+  width: 71%;
 
   &:hover {
     color: $special-dark-green;

@@ -3,3 +3,16 @@
   margin: 0 auto;
   padding: 0 34px;
 }
+
+@media (min-width: 768px) {
+  .catalog-container {
+    order: 3;
+  }
+}
+
+@media (min-width: 1150px) {
+  .catalog-container {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+}

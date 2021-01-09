@@ -1,10 +1,29 @@
 .footer {
-  min-width: 380px;
+  min-width: 320px;
   background-color: $background_footer;
   outline: 5px solid rgb(202, 102, 194);
   outline-offset: -5px;
+  flex: 0 0 auto;
 }
 
 .footer__social {
   margin-bottom: 47px;
+}
+
+@media (min-width: 768px) {
+  .footer__social {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer__img {
+    /* Позиционирование */
+    position: absolute;
+    clip: rect(0 0 0 0);
+    /* Блочная модель */
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
 }

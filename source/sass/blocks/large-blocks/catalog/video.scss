@@ -1,5 +1,21 @@
 .video__title {
-  padding-bottom: 25px;
+  color: $text-color;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  margin: 22px 34px 25px;
+}
+
+@media (min-width: 768px) {
+  .video__title {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .video__title {
+    order: 2;
+  }
 }
 
 .video__img {
@@ -7,5 +23,45 @@
 }
 
 .video__text {
+  color: $basic-gray;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 30px;
   margin-bottom: 39px;
+}
+
+.video {
+  border: 1px solid $special-gray;
+  margin-bottom: 56px;
+}
+
+@media (min-width: 768px) {
+  .video {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1150px) {
+  .video {
+    display: grid;
+  }
+
+  .video picture {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    min-width: 683px;
+  }
+
+  .video__tile {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+}
+
+@media (min-width: 768px) {
+  .video picture {
+    order: 1;
+  }
 }

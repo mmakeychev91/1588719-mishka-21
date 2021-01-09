@@ -12,3 +12,13 @@
   font-size: 19px;
   line-height: 18px;
 }
+
+@media (min-width: 768px) {
+  .copyright__title {
+    margin: 0 13.5px;
+  }
+
+  .copyright__link {
+    margin-left: 13.5px;
+  }
+}

@@ -1,23 +1,60 @@
-.types-of-products {
-  min-width: 380px;
-  outline: 5px solid rgb(102, 51, 204);
-  outline-offset: -5px;
+@media (min-resolution: 2dppx) {
+  .types-of-products {
+    background-image: url("../img/mobile/hero-mobile@2x.jpg");
+    background-position: 50%;
+    background-repeat: no-repeat;
+  }
 }
 
-.types-of-products__title {
-  margin: 0;
-  padding: 90px 10px 120px 10px;
-  font-weight: 700;
-  font-size: 27px;
-  line-height: 30px;
-  outline: 5px solid rgb(502, 51, 204);
+.types-of-products {
+  position: relative;
+  min-width: 320px;
+  outline: 5px solid rgb(102, 51, 204);
   outline-offset: -5px;
+  background-color: $special-ligh-gray;
+  background-image: url("../img/mobile/hero-mobile.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+  .types-of-products::after {
+    content: "";
+    width: 100%;
+    height: 24px;
+    position: absolute;
+    background-image: url("../img/tablet/zigzag-fill-tablet.svg");
+    bottom: 0;
+  }
+}
+
+@media (min-width: 1150px) {
+  .types-of-products::after {
+    content: "";
+    width: 100%;
+    height: 34px;
+    position: absolute;
+    background-image: url("../img/desktop/zigzag-fill-desktop.svg");
+    bottom: 0;
+  }
 }
 
 .types-of-products__list {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+@media (min-width: 768px) {
+  .types-of-products__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 50px;
+  }
+
+  .types-of-products__item {
+    flex: 0 1 50%;
+  }
 }
 
 .types-of-products__item {
@@ -31,4 +68,31 @@
   font-size: 19px;
   line-height: 24px;
   color: $basic-white;
+}
+
+.types-of-products__title {
+  margin: 0;
+  padding: 90px 10px 120px 10px;
+  text-align: center;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 30px;
+  outline: 5px solid rgb(502, 51, 204);
+  outline-offset: -5px;
+}
+
+@media (min-width: 768px) {
+  .types-of-products__title {
+    padding: 155px 85px 372px 85px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .types-of-products__title {
+    padding: 157px 215px 355px 215px;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

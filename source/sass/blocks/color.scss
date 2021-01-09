@@ -1,5 +1,6 @@
 .color {
   padding: 33px 0 41px 0;
+  background-color: $basic-light-gray;
 }
 
 .color__list {
@@ -8,11 +9,30 @@
   list-style: none;
 }
 
+@media (min-width: 768px) {
+  .color__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .color__item {
   position: relative;
   margin: 0 0 33px 0;
 
   &:last-child {
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .color__item {
+    flex: 0 1 50%;
+  }
+}
+
+@media (min-width: 1150px) {
+  .color__item {
+    flex: 0 1 33.333%;
   }
 }

@@ -1,7 +1,14 @@
 .text-catalog {
-  margin: 0;
+  padding: 0 0 39px 0;
+  margin: 0 28px;
   color: $basic-gray;
   font-weight: 400;
   font-size: 13px;
   line-height: 30px;
+}
+
+@media (min-width: 768px) {
+  .text-catalog {
+    font-size: 15px;
+  }
 }

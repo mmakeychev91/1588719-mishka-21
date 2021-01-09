@@ -5,6 +5,7 @@
   font-size: 17px;
   line-height: 18px;
   border: none;
+  outline: none;
 
   &::placeholder {
     color: $basic-black;
@@ -16,20 +17,49 @@
     border-bottom: 2px solid $basic-black;
   }
 
-  &--tel {
-    padding: 17px 0 18px 0;
-    border-bottom: 2px solid $basic-black;
-  }
-
-  &--e-mail {
-    padding: 18px 0 16px 0;
-    border-bottom: 2px solid $basic-black;
-  }
-
   &--extra {
+    resize: none;
     min-height: 142px;
     box-sizing: border-box;
-    padding: 17px 17px 17px 17px;
+    padding: 17px;
     border: 2px solid $basic-gray;
+  }
+}
+
+.input--tel {
+  padding: 17px 0 18px 0;
+  border-bottom: 2px solid $basic-black;
+  background-color: $basic-light-gray;
+}
+
+@media (min-width: 1150px) {
+  .input--tel {
+    margin-right: 175px;
+  }
+}
+
+.input--e-mail {
+  padding: 18px 0 16px 0;
+  border-bottom: 2px solid $basic-black;
+  background-color: $basic-light-gray;
+}
+
+@media (min-width: 1150px) {
+  .input--e-mail {
+    margin-right: 175px;
+  }
+}
+
+@media (min-width: 768px) {
+  .input {
+    &::placeholder {
+      font-size: 19px;
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  .input--extra {
+    margin-right: 175px;
   }
 }
