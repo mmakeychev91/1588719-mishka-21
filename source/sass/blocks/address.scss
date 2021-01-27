@@ -1,14 +1,37 @@
 .address {
+  margin: 20px 0;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   width: 100%;
+
+  @media (min-width: 768px) {
+    margin: 10px 0;
+  }
+
+  @media (min-width: 1150px) {
+    margin: 15px 0;
+  }
 }
 
 .address__type-of-contact {
   width: 29%;
+  margin: 0;
+
+  @media (min-width: 321px) {
+    width: auto;
+    margin-right: 25px;
+  }
 }
 
 .address__contact {
+  @media (min-width: 321px) {
+    width: auto;
+  }
+
   width: 71%;
+
+  p {
+    margin: 0;
+  }
 }

@@ -1,11 +1,61 @@
+.control {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: 768px) {
+    width: 137px;
+    margin: 58px 19px 0 auto;
+    justify-content: space-between;
+  }
+}
+
 .control__button {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+    outline: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
   &--left {
-    width: 50px;
-    height: 26px;
+    background-color: transparent;
+    cursor: pointer;
+    width: 50%;
+    height: 52px;
+    border: 1px solid $special-gray;
+    border-right: none;
+    background-image: url("../../img/genaral/icons/arrow-left.svg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+
+    @media (min-width: 768px) {
+      border: none;
+      width: 50px;
+      height: 26px;
+    }
   }
 
   &--right {
-    width: 50px;
-    height: 26px;
+    background-color: transparent;
+    cursor: pointer;
+    width: 50%;
+    height: 52px;
+    border: 1px solid $special-gray;
+    background-image: url("../../img/genaral/icons/arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+
+    @media (min-width: 768px) {
+      border: none;
+      width: 50px;
+      height: 26px;
+      background-position: 0 0;
+    }
   }
 }

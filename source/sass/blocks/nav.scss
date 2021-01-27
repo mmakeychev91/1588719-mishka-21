@@ -1,7 +1,48 @@
+.nav {
+  @media (max-width: 767px) {
+    position: absolute;
+    z-index: 2;
+    top: 79px;
+    width: 100%;
+    min-width: 260px;
+    background-color: $basic-white;
+  }
+
+  @media (min-width: 768px) {
+    width: 100%;
+  }
+}
+
+.nav--closed-menu {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
+.nav--opened-menu {
+  display: block;
+}
+
 .nav__list {
-  padding: 0;
   margin: 0;
+  padding: 0;
   list-style: none;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    &:first-child .nav__item--catalog {
+      padding-left: 0;
+    }
+
+    &:last-child .nav__item--basket {
+      padding: 0;
+    }
+  }
 }
 
 .nav__item {
@@ -10,6 +51,144 @@
   font-size: 17px;
   line-height: 24px;
   color: $text_color;
+
+  @media (max-width: 767px) {
+    position: relative;
+    padding: 27px 0;
+    padding-left: 76px;
+    border-top: 1px solid $special-gray;
+
+    &:nth-child(4) {
+      border-bottom: 1px solid $special-gray;
+    }
+  }
+
+  @media (max-width: 1149px) {
+    &--new-products {
+      display: none;
+    }
+
+    &--sale {
+      display: none;
+    }
+  }
+
+  @media (min-width: 768px) {
+    padding: 0 35px;
+  }
+
+  @media (min-width: 1150px) {
+    &--new-products {
+      position: absolute;
+      padding: 0;
+      top: 110px;
+      left: 0;
+      z-index: 1;
+      font-size: 15px;
+    }
+
+    &--sale {
+      position: absolute;
+      padding: 0;
+      top: 110px;
+      left: 219px;
+      z-index: 1;
+      font-size: 15px;
+    }
+  }
+
+  &--basket {
+    @media (min-width: 768px) {
+      position: relative;
+    }
+  }
+
+  &--basket::before {
+    @media (min-width: 768px) {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 88px;
+      top: -32px;
+      left: -85px;
+      background-color: $enother-darker-gray;
+    }
+  }
+
+  &--search {
+    @media (min-width: 768px) {
+      position: relative;
+      padding: 0;
+    }
+
+    @media (min-width: 1150px) {
+      margin-left: auto;
+    }
+  }
+
+  &--search::before {
+    @media (min-width: 768px) {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 88px;
+      top: -32px;
+      left: -168px;
+      background-color: $enother-darker-gray;
+    }
+  }
+
+  &--catalog {
+    @media (min-width: 768px) {
+      position: absolute;
+      top: 110px;
+      left: 0;
+      z-index: 1;
+      font-size: 15px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1149px) {
+      padding: 0;
+    }
+
+    @media (min-width: 1150px) {
+      position: static;
+      font-size: 17px;
+    }
+  }
+
+  &--order {
+    position: relative;
+
+    @media (min-width: 768px) and (max-width: 1149px) {
+      padding: 0;
+    }
+
+    @media (min-width: 768px) {
+      position: absolute;
+      top: 110px;
+      left: 168px;
+      z-index: 1;
+      font-size: 15px;
+    }
+
+    @media (min-width: 1150px) {
+      position: static;
+      font-size: 17px;
+    }
+  }
+
+  &--order::before {
+    @media (min-width: 1150px) {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 88px;
+      top: 0;
+      left: 183px;
+      background-color: $enother-darker-gray;
+    }
+  }
 }
 
 .nav__link {
@@ -21,5 +200,65 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  &--search {
+    position: relative;
+  }
+
+  &--search svg {
+    position: absolute;
+    top: 2px;
+    left: -44px;
+
+    @media (min-width: 768px) {
+      left: -135px;
+    }
+  }
+
+  &--search:hover path {
+    fill: $basic-light-green;
+    opacity: 1;
+  }
+
+  &--search:active path {
+    fill: $basic-light-green;
+    opacity: 0.3;
+  }
+
+  &--basket {
+    position: relative;
+  }
+
+  &--basket svg {
+    position: absolute;
+    top: 2px;
+    left: -46px;
+
+    @media (min-width: 768px) {
+      left: -53px;
+    }
+  }
+
+  &--basket:hover path {
+    fill: $basic-light-green;
+    opacity: 1;
+  }
+
+  &--basket:active path {
+    fill: $basic-light-green;
+    opacity: 0.3;
+  }
+}
+
+.nav__text {
+  @media (min-width: 768px) {
+    /* Позиционирование */
+    position: absolute;
+    clip: rect(0 0 0 0);
+    /* Блочная модель */
+    width: 1px;
+    height: 1px;
+    margin: -1px;
   }
 }

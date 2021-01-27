@@ -1,38 +1,49 @@
 .color {
-  padding: 33px 0 41px 0;
-  background-color: $basic-light-gray;
+  padding: 2px 0 41px 0;
+
+  @media (min-width: 768px) {
+    padding-top: 67px;
+    padding-bottom: 10px;
+    background-color: $basic-light-gray;
+  }
 }
 
 .color__list {
   margin: 0;
-  padding: 0;
+  padding: 35px 0 0 0;
   list-style: none;
-}
 
-@media (min-width: 768px) {
-  .color__list {
+  @media (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 0;
+    padding-left: 0;
+  }
+
+  @media (min-width: 1150px) {
+    padding-left: 10px;
   }
 }
 
 .color__item {
   position: relative;
-  margin: 0 0 33px 0;
+  margin: 0 0 43px 0;
 
   &:last-child {
     margin-bottom: 0;
-  }
-}
 
-@media (min-width: 768px) {
-  .color__item {
-    flex: 0 1 50%;
+    @media (min-width: 1150px) {
+      margin-bottom: 43px;
+    }
   }
-}
 
-@media (min-width: 1150px) {
-  .color__item {
+  @media (min-width: 768px) {
+    margin: 0 0 57px 0;
+    flex: 0 1 48%;
+  }
+
+  @media (min-width: 1150px) {
     flex: 0 1 33.333%;
   }
 }

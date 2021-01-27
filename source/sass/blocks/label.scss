@@ -3,12 +3,12 @@
   font-size: 17px;
   line-height: 18px;
 
-  &--radio {
-    padding-left: 69px;
-  }
-
   &--checkbox {
-    padding-left: 69px;
+    padding-left: 60px;
+
+    @media (min-width: 768px) {
+      padding-left: 82px;
+    }
   }
 }
 

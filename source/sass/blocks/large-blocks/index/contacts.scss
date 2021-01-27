@@ -1,31 +1,46 @@
 .contacts {
-  outline: 5px solid rgb(502, 2, 94);
-  outline-offset: -5px;
-  padding: 38px 0 62px 0;
+  position: relative;
+  padding: 38px 0 45px 0;
   color: $basic-gray;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   width: 100%;
-}
 
-@media (min-width: 768px) {
-  .contacts {
+  @media (min-width: 768px) {
     display: grid;
-  }
-}
+    grid-template-columns: 50% 50%;
+    padding-bottom: 40px;
 
-@media (min-width: 1150px) {
-  .contacts {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50px;
+      right: 0;
+      width: 47px;
+      height: 81px;
+      background-image: url("../../../../img/genaral/icons/flag.svg");
+
+      @media (min-width: 1150px) {
+        left: -110px;
+        top: 60px;
+      }
+    }
+  }
+
+  @media (min-width: 1150px) {
     display: flex;
+    padding-bottom: 0;
+    padding-top: 35px;
   }
 }
 
 .contacts__title {
+  width: 100%;
+  color: $basic-black;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
-  width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -41,6 +56,7 @@
   .contacts__title {
     font-size: 53px;
     line-height: 57px;
+    margin-bottom: 18px;
   }
 }
 
@@ -49,6 +65,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
+  margin: 28px 0;
 }
 
 @media (min-width: 768px) {
@@ -64,6 +81,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
+  margin: 28px 0;
 }
 
 @media (min-width: 768px) {

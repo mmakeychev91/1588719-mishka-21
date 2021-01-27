@@ -1,4 +1,95 @@
-.radio {
-  //добавлю временные отступы, чтобы сборка не ругалась на пустой файл
-  padding-bottom: 1px;
+.radio + label::before {
+  content: "";
+  position: absolute;
+  left: -60px;
+  bottom: 0;
+  width: 42px;
+  height: 42px;
+  background: url("../img/mobile/icons/radio-mobile.svg") no-repeat;
+
+  @media (min-width: 346px) {
+    bottom: -10px;
+  }
+
+  @media (min-width: 768px) {
+    bottom: -15px;
+    left: -77px;
+    width: 52px;
+    height: 52px;
+    background: url("../img/tablet/icons/radio-tablet.svg") no-repeat;
+  }
+
+  @media (min-width: 1150px) {
+    left: -83px;
+  }
+}
+
+.radio:checked + label::before {
+  content: "";
+  position: absolute;
+  left: -60px;
+  bottom: 0;
+  width: 42px;
+  height: 42px;
+  background: url("../img/mobile/icons/radio-active-mobile.svg") no-repeat;
+
+  @media (min-width: 346px) {
+    bottom: -10px;
+  }
+
+  @media (min-width: 768px) {
+    bottom: -15px;
+    left: -77px;
+    width: 52px;
+    height: 52px;
+    background: url("../img/tablet/icons/radio-active-tablet.svg") no-repeat;
+  }
+
+  @media (min-width: 1150px) {
+    left: -83px;
+  }
+}
+
+.radio--children-toy + label::before {
+  content: "";
+  position: absolute;
+  left: -60px;
+  bottom: -10px;
+  width: 42px;
+  height: 42px;
+  background: url("../img/mobile/icons/radio-mobile.svg") no-repeat;
+
+  @media (min-width: 768px) {
+    bottom: -15px;
+    left: -77px;
+    width: 52px;
+    height: 52px;
+    background: url("../img/tablet/icons/radio-tablet.svg") no-repeat;
+  }
+
+  @media (min-width: 1150px) {
+    left: -83px;
+  }
+}
+
+.radio--children-toy:checked + label::before {
+  content: "";
+  position: absolute;
+  left: -60px;
+  bottom: -10px;
+  width: 42px;
+  height: 42px;
+  background: url("../img/mobile/icons/radio-active-mobile.svg") no-repeat;
+
+  @media (min-width: 768px) {
+    bottom: -15px;
+    left: -77px;
+    width: 52px;
+    height: 52px;
+    background: url("../img/tablet/icons/radio-active-tablet.svg") no-repeat;
+  }
+
+  @media (min-width: 1150px) {
+    left: -83px;
+  }
 }

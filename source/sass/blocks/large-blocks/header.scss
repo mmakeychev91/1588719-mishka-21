@@ -1,50 +1,79 @@
 .header {
-  padding: 25px 0 28px 0;
-  outline: 5px solid rgb(102, 51, 204);
-  outline-offset: -5px;
-  display: flex;
-  align-items: center;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 79px;
+
+  @media (max-width: 767px) {
+    display: block;
+  }
+
+  @media (min-width: 768px) {
+    min-height: 88px;
+  }
+}
+
+.header__link {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .header picture {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-}
 
-@media (min-width: 768px) {
-  .header picture {
-    left: 9%;
+  @media (max-width: 767px) {
+    padding: 22px 0;
   }
-}
 
-@media (min-width: 1150px) {
-  .header picture {
+  @media (min-width: 768px) {
+    left: 57px;
+  }
+
+  @media (min-width: 1150px) {
     left: 50%;
     transform: translateX(-50%);
   }
 }
 
-@media (max-width: 767px) {
-  .header--form-and-catalog picture {
-    bottom: 20%;
-  }
-}
-
 @media (min-width: 768px) {
   .header--form-and-catalog picture {
-    bottom: 10%;
+    bottom: 22%;
   }
 }
 
 @media (min-width: 1150px) {
   .header--form-and-catalog picture {
-    bottom: -12%;
+    bottom: 7%;
   }
 }
 
 .header__button {
-  flex: 0 1 auto;
-  margin-left: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .header__button {
+    /* Позиционирование */
+    position: absolute;
+    clip: rect(0 0 0 0);
+    /* Блочная модель */
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
 }

@@ -1,6 +1,7 @@
 //Цвета:
 // first we set descriptive variables:
 $basic-black:#000000;
+$special-black:#231f20;
 $pale-green:#ecf9f7;
 $basic-light-green:#63d1bb;
 $special-light-green:#59d5bc;
@@ -12,6 +13,10 @@ $basic-gray:#444444;
 $basic-light-gray:#f1f1f1;
 $special-ligh-gray:#fbfbfb;
 $special-gray:#ececec;
+$special-darker-gray:#e0e0e0;
+$enother-darker-gray:#e5e5e5;
+$most-darker-gray: #c6c6c6;
+$enother-special-darker-gray: #c7c7c7;
 // then we set functional variables:
 $text_color: $basic-black;
 $text_button:$basic-gray;

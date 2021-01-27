@@ -15,6 +15,17 @@
   &--full-name {
     padding: 17px 0;
     border-bottom: 2px solid $basic-black;
+
+    @media (min-width: 768px) {
+      padding-left: 20px;
+      padding-top: 0;
+      margin-left: 24px;
+    }
+
+    @media (min-width: 1150px) {
+      margin-left: 26px;
+      padding-left: 18px;
+    }
   }
 
   &--extra {
@@ -23,30 +34,53 @@
     box-sizing: border-box;
     padding: 17px;
     border: 2px solid $basic-gray;
+    margin-top: 20px;
+
+    @media (min-width: 768px) {
+      margin-top: -20px;
+      margin-bottom: 52px;
+    }
+
+    @media (min-width: 1150px) {
+      margin-right: 175px;
+      margin-bottom: 48px;
+      padding: 15px;
+    }
   }
 }
 
 .input--tel {
   padding: 17px 0 18px 0;
   border-bottom: 2px solid $basic-black;
-  background-color: $basic-light-gray;
-}
 
-@media (min-width: 1150px) {
-  .input--tel {
+  @media (min-width: 768px) {
+    padding-left: 20px;
+    padding-top: 0;
+    background-color: $basic-light-gray;
+  }
+
+  @media (min-width: 1150px) {
     margin-right: 175px;
+    padding-left: 18px;
   }
 }
 
 .input--e-mail {
-  padding: 18px 0 16px 0;
+  padding: 20px 0 16px 0;
+  line-height: 20px;
   border-bottom: 2px solid $basic-black;
-  background-color: $basic-light-gray;
+
+  @media (min-width: 768px) {
+    padding-left: 20px;
+    padding-top: 0;
+    background-color: $basic-light-gray;
+  }
 }
 
 @media (min-width: 1150px) {
   .input--e-mail {
     margin-right: 175px;
+    padding-left: 18px;
   }
 }
 
@@ -55,11 +89,5 @@
     &::placeholder {
       font-size: 19px;
     }
-  }
-}
-
-@media (min-width: 1150px) {
-  .input--extra {
-    margin-right: 175px;
   }
 }

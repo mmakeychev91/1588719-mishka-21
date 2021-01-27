@@ -1,19 +1,35 @@
 .e-mail {
+  margin: 10px 0;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   width: 100%;
   align-items: center;
+
+  @media (min-width: 768px) {
+    margin: 10px 0;
+  }
+
+  @media (min-width: 1150px) {
+    margin: 15px 0;
+  }
 }
 
 .e-mail__type-of-contact {
   width: 29%;
+  margin: 0;
+
+  @media (min-width: 321px) {
+    width: auto;
+    margin-right: 25px;
+  }
 }
 
 .e-mail__contact {
   color: $basic-gray;
   border-bottom: 1px solid $bright-green;
   width: 71%;
+  margin: 0;
 
   &:hover {
     color: $special-dark-green;
@@ -22,5 +38,9 @@
 
   &:active {
     border-bottom: 1px solid $pale-green;
+  }
+
+  @media (min-width: 321px) {
+    width: auto;
   }
 }

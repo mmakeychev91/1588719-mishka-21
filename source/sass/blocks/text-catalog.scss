@@ -1,14 +1,30 @@
 .text-catalog {
+  position: relative;
   padding: 0 0 39px 0;
   margin: 0 28px;
+  margin-bottom: 3px;
   color: $basic-gray;
   font-weight: 400;
   font-size: 13px;
   line-height: 30px;
-}
 
-@media (min-width: 768px) {
-  .text-catalog {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 20px;
+    background-color: $special-gray;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  @media (min-width: 768px) {
     font-size: 15px;
+    margin: 0;
+    margin-top: 7px;
+    padding: 0;
   }
 }

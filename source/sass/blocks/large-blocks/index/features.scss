@@ -1,7 +1,17 @@
 .features {
-  outline: 5px solid rgb(902, 2, 94);
-  outline-offset: -5px;
-  padding: 31px 0 29px 0;
+  padding: 25px 0 29px 0;
+
+  @media (min-width: 768px) {
+    padding: 62px 0 29px 0;
+  }
+
+  @media (min-width: 1150px) {
+    padding: 79px 0 35px 0;
+  }
+}
+
+.features__title {
+  margin: 0;
 }
 
 @media (min-width: 1150px) {
@@ -12,10 +22,79 @@
 }
 
 .features__item {
-  margin: 0;
+  position: relative;
+  margin: 83px 0;
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
+
+  @media (min-width: 400px) and (max-width: 767px) {
+    flex: 0 1 45%;
+  }
+
+  @media (min-width: 768px) {
+    margin: 55px 0;
+  }
+
+  &--eco::before {
+    content: "";
+    position: absolute;
+    top: -55px;
+    left: 8px;
+    width: 33px;
+    height: 38px;
+    background-image: url("../img/genaral/icons/flower.svg");
+  }
+
+  &--style::before {
+    content: "";
+    position: absolute;
+    top: -54px;
+    left: 0;
+    width: 47px;
+    height: 27px;
+    background-image: url("../img/genaral/icons/style.svg");
+  }
+
+  &--like::before {
+    content: "";
+    position: absolute;
+    top: -49px;
+    left: 7px;
+    width: 34px;
+    height: 27px;
+    background-image: url("../img/genaral/icons/heart.svg");
+  }
+
+  &--handmade::before {
+    content: "";
+    position: absolute;
+    top: -52px;
+    left: 4px;
+    width: 35px;
+    height: 34px;
+    background-image: url("../img/genaral/icons/knitted-product.svg");
+  }
+
+  &--export::before {
+    content: "";
+    position: absolute;
+    top: -51px;
+    left: -6px;
+    width: 55px;
+    height: 23px;
+    background-image: url("../img/genaral/icons/rocked.svg");
+  }
+
+  &--gift-box::before {
+    content: "";
+    position: absolute;
+    top: -53px;
+    left: 3px;
+    width: 35px;
+    height: 31.33px;
+    background-image: url("../img/genaral/icons/gift.svg");
+  }
 }
 
 @media (min-width: 768px) {
@@ -30,6 +109,22 @@
   padding: 0;
   margin: 0;
   list-style: none;
+
+  @media (min-width: 400px) and (max-width: 767px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: 768px) {
+    padding-top: 42px;
+  }
+
+  @media (max-width: 767px) {
+    &:last-child .features__item {
+      margin-bottom: 0;
+    }
+  }
 }
 
 @media (min-width: 768px) {

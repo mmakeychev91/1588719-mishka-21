@@ -1,0 +1,14 @@
+.price-container {
+  @media (min-width: 768px) {
+    max-width: 292px;
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+
+  @media (min-width: 1150px) {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    max-height: 109px;
+    margin-bottom: auto;
+  }
+}

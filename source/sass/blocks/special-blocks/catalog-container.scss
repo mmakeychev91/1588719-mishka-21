@@ -1,18 +1,17 @@
 .catalog-container {
   min-width: 252px;
   margin: 0 auto;
-  padding: 0 34px;
-}
+  padding: 0 32px;
 
-@media (min-width: 768px) {
-  .catalog-container {
+  @media (min-width: 768px) {
     order: 3;
+    padding: 0 40px;
   }
-}
 
-@media (min-width: 1150px) {
-  .catalog-container {
+  @media (min-width: 1150px) {
     grid-column: 2/3;
     grid-row: 2/3;
+    padding-left: 77px;
+    padding-right: 57px;
   }
 }

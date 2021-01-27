@@ -1,4 +1,31 @@
 .parameters {
-  //добавлю временные отступы, чтобы сборка не ругалась на пустой файл
-  padding-bottom: 1px;
+  padding: 13px 0 11px 0;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid $special-gray;
+
+  &--diameter {
+    padding: 9px 0 10px 0;
+  }
+
+  &--height {
+    padding: 9px 0 10px 0;
+  }
+
+  &__parameter {
+    width: 38%;
+
+    @media (min-width: 768px) {
+      width: 33%;
+    }
+  }
+
+  &__value {
+    width: auto;
+    margin: 0;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 292px;
+  }
 }
