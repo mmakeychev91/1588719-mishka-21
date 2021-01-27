@@ -57,7 +57,7 @@ exports.scripts = scripts;
 // Images
 
 const images = () => {
-  return gulp.src("source/img/**/*.{png,jpg,svg}")
+  return gulp.src("source/img/**/**/**/*.{png,jpg,svg}")
     .pipe(imagemin([
       imagemin.mozjpeg({ progressive: true }),
       imagemin.optipng({ optimizationLevel: 3 }),
@@ -71,23 +71,12 @@ exports.images = images;
 // WebP
 
 const createWebp = () => {
-  return gulp.src("source/img/**/*.{jpg,png}")
+  return gulp.src("source/img/**/**/**/*.{jpg,png}")
     .pipe(webp({ quality: 90 }))
     .pipe(gulp.dest("source/img"))
 }
 
 exports.createWebp = createWebp;
-
-// Sprite
-
-const sprite = () => {
-  return gulp.src("source/img/icons/*.svg")
-    .pipe(svgstore())
-    .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("source/img"));
-}
-
-exports.sprite = sprite;
 
 // Copy
 
@@ -136,7 +125,7 @@ const reload = done => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/sass/**/*.scss", gulp.series(styles));
+  gulp.watch("source/sass/**/**/**/*.scss", gulp.series(styles));
   gulp.watch("source/js/script.js", gulp.series(scripts));
   gulp.watch("source/*.html", gulp.series(html, reload));
 }
