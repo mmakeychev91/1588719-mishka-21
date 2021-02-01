@@ -1,16 +1,14 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "Open Sans", sans-serif;
-  src: url "../fonts/opensans.woff2" format("woff2");
-  src: url "../fonts/opensans.woff" format("woff");
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
   font-weight: 400;
   font-display: swap; }
 
 @font-face {
-  font-family: "Open Sans", sans-serif;
-  src: url "../fonts/opensansbold.woff2" format("woff2");
-  src: url "../fonts/opensansbold.woff" format("woff");
-  font-weight: 400;
+  font-family: "Open Sans";
+  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
+  font-weight: 700;
   font-display: swap; }
 
 html {
@@ -1305,10 +1303,15 @@ a {
     right: 36px;
     width: 40px;
     height: 62px;
-    background-image: url("../../../../img/genaral/icons/interior.svg"); }
+    background-image: url("../img/genaral/icons/interior.svg");
+    opacity: 0.5; }
     @media (min-width: 768px) {
       .types-of-products__text--interior::after {
         top: 30px; } }
+  .types-of-products__text--interior:hover::after {
+    opacity: 0.7; }
+  .types-of-products__text--interior:active::after {
+    opacity: 0.3; }
   .types-of-products__text--toys::after {
     content: "";
     position: absolute;
@@ -1316,7 +1319,8 @@ a {
     right: 27px;
     width: 60px;
     height: 60px;
-    background-image: url("../../../../img/genaral/icons/toy.svg"); }
+    background-image: url("../img/genaral/icons/toy.svg");
+    opacity: 0.5; }
     @media (min-width: 768px) {
       .types-of-products__text--toys::after {
         top: 31px;
@@ -1324,6 +1328,10 @@ a {
     @media (min-width: 1150px) {
       .types-of-products__text--toys::after {
         right: 35px; } }
+  .types-of-products__text--toys:hover::after {
+    opacity: 0.7; }
+  .types-of-products__text--toys:active::after {
+    opacity: 0.3; }
   @media (min-width: 768px) {
     .types-of-products__text {
       font-size: 20px;
@@ -1460,7 +1468,8 @@ a {
   margin: 18px 0 15px 0;
   font-weight: 400;
   font-size: 15px;
-  line-height: 24px; }
+  line-height: 24px;
+  color: #444444; }
   @media (min-width: 768px) {
     .product-of-week__lead {
       margin-top: 30px; } }
@@ -1914,7 +1923,8 @@ a {
   margin-top: 5px;
   font-weight: 400;
   font-size: 17px;
-  line-height: 30px; }
+  line-height: 30px;
+  color: #444444; }
 
 .control {
   display: flex;
@@ -1987,7 +1997,7 @@ a {
         right: 0;
         width: 47px;
         height: 81px;
-        background-image: url("../../../../img/genaral/icons/flag.svg"); } }
+        background-image: url("../img/genaral/icons/flag.svg"); } }
     @media (min-width: 768px) and (min-width: 1150px) {
       .contacts::after {
         left: -110px;
