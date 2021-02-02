@@ -1030,6 +1030,12 @@ a {
   .footer__img {
     margin-bottom: 5px; } }
 
+.footer__link svg:hover {
+  fill: #46c1ae; }
+
+.footer__link svg:active {
+  opacity: 0.3; }
+
 .social {
   margin-top: 5px;
   margin-bottom: 40px; }
@@ -1058,6 +1064,12 @@ a {
     padding: 0; }
   .social li:last-child {
     margin-right: 8px; } }
+
+.social__link svg:hover {
+  fill: #59d5bc; }
+
+.social__link svg:active {
+  opacity: 0.3; }
 
 .visually-hidden {
   position: absolute;

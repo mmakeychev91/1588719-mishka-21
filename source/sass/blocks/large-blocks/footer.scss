@@ -26,3 +26,13 @@
     margin-bottom: 5px;
   }
 }
+
+.footer__link svg {
+  &:hover {
+    fill: $special-dark-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

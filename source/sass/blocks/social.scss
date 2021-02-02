@@ -36,3 +36,11 @@
     margin-right: 8px;
   }
 }
+.social__link svg{
+  &:hover {
+    fill: $special-light-green;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
