@@ -2256,10 +2256,10 @@ a {
       left: -83px; } }
 
 .radio + label:hover svg .radio-svg__circle {
-  stroke: #62D1BA; }
+  stroke: #62d1ba; }
 
 .radio + label:active svg .radio-svg__circle {
-  stroke: #B3B3B3; }
+  stroke: #b3b3b3; }
 
 .radio:checked + label svg {
   cursor: pointer;
@@ -2370,10 +2370,10 @@ a {
       height: 52px; } }
 
 .checkbox + label:hover svg .checkbox-svg__square {
-  stroke: #62D1BA; }
+  stroke: #62d1ba; }
 
 .checkbox + label:active svg .checkbox-svg__square {
-  stroke: #B3B3B3; }
+  stroke: #b3b3b3; }
 
 .input {
   width: 100%;

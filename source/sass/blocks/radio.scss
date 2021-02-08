@@ -26,15 +26,17 @@
     left: -83px;
   }
 }
+
 .radio + label:hover svg {
-.radio-svg__circle{
-  stroke: #62D1BA;
+  .radio-svg__circle {
+    stroke: #62d1ba;
+  }
 }
-}
+
 .radio + label:active svg {
-.radio-svg__circle{
-  stroke: #B3B3B3;
-}
+  .radio-svg__circle {
+    stroke: #b3b3b3;
+  }
 }
 
 .radio:checked + label svg {
@@ -42,8 +44,7 @@
 
   .radio-svg__green-dot {
     display: block;
-    }
-
+  }
 
   position: absolute;
   left: -60px;
