@@ -201,9 +201,9 @@
 }
 
 .container--header-opened-menu .header__button:active::before {
-  background-color: fade($basic-black);
+  background-color: $basic-black;
 }
 
 .container--header-opened-menu .header__button:active::after {
-  background-color: fade($basic-black);
+  background-color: $basic-black;
 }

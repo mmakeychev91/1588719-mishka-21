@@ -410,10 +410,10 @@ a {
   transform: rotate(-45deg); }
 
 .container--header-opened-menu .header__button:active::before {
-  background-color: fade(#000000); }
+  background-color: #000000; }
 
 .container--header-opened-menu .header__button:active::after {
-  background-color: fade(#000000); }
+  background-color: #000000; }
 
 .title {
   font-weight: 700;
