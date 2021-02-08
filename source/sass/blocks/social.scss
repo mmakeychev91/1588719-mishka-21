@@ -8,8 +8,9 @@
 }
 
 .social__list {
+  max-width: 260px;
   padding: 0 20px;
-  margin: 0;
+  margin: 0 auto;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -23,7 +24,7 @@
 
 @media (min-width: 768px) {
   .social__item {
-    margin: 0 20px;
+    margin: 10px 20px;
   }
 }
 
@@ -31,15 +32,13 @@
   .social__list {
     padding: 0;
   }
-
-  .social li:last-child {
-    margin-right: 8px;
-  }
 }
-.social__link svg{
+
+.social__link svg {
   &:hover {
     fill: $special-light-green;
   }
+
   &:active {
     opacity: 0.3;
   }

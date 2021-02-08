@@ -57,7 +57,6 @@
 
   @media (min-width: 1150px) {
     grid-template-columns: 16.667% 33.333% 50%;
-    grid-template-rows: 19% 22% 38% 21%;
 
     picture {
       grid-column: 3/4;
@@ -98,7 +97,7 @@
 
 .container--footer-elements {
   padding: 20px 69px 23px 69px;
-  max-height: 160px;
+  background-color: $basic-light-gray;
 
   @media (min-width: 768px) {
     display: flex;

@@ -7,6 +7,10 @@
   <title>Вязание на заказ</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" />
+  <link rel="preload" href="fonts/opensans.woff" as="font" />
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" />
+  <link rel="preload" href="fonts/opensansbold.woff" as="font" />
 </head>
 
 <body class="page__body">
@@ -69,11 +73,19 @@
             <ul class="type__list user-field">
               <li class="type__item">
                 <input class="type__radio radio visually-hidden" type="radio" name="type" value="interior_accessory" id="type-choice1" checked>
-                <label for="type-choice1" class="type__label label label--radio"> Аксессуар для интерьера</label>
+                <label for="type-choice1" class="type__label label label--radio"> Аксессуар для интерьера <svg class="radio-svg" width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="radio-svg__circle" d="M25.8884 2.87372C39.1193 2.87372 49.8137 13.3997 49.8137 26.346C49.8137 39.2919 39.1193 49.8182 25.8884 49.8182C12.6574 49.8182 1.96299 39.2919 1.96299 26.346C1.96299 13.3997 12.6574 2.87372 25.8884 2.87372Z" stroke="#444444" stroke-width="2" />
+                    <path class="radio-svg__green-dot" fill-rule="evenodd" clip-rule="evenodd" d="M26.2395 16.3934C31.664 16.3934 36.0614 20.7903 36.0614 26.2148C36.0614 31.6392 31.664 36.0366 26.2395 36.0366C20.8151 36.0366 16.4177 31.6392 16.4177 26.2148C16.4177 20.7903 20.8151 16.3934 26.2395 16.3934Z" fill="#62D1BA" />
+                  </svg>
+                </label>
               </li>
               <li class="type__item">
                 <input class="type__radio radio radio--children-toy visually-hidden" type="radio" name="type" value="toy" id="type-choice2">
-                <label for="type-choice2" class="type__label label label--radio"> Детская игрушка </label>
+                <label for="type-choice2" class="type__label label label--radio"> Детская игрушка <svg class="radio-svg" width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="radio-svg__circle" d="M25.8884 2.87372C39.1193 2.87372 49.8137 13.3997 49.8137 26.346C49.8137 39.2919 39.1193 49.8182 25.8884 49.8182C12.6574 49.8182 1.96299 39.2919 1.96299 26.346C1.96299 13.3997 12.6574 2.87372 25.8884 2.87372Z" stroke="#444444" stroke-width="2" />
+                    <path class="radio-svg__green-dot" fill-rule="evenodd" clip-rule="evenodd" d="M26.2395 16.3934C31.664 16.3934 36.0614 20.7903 36.0614 26.2148C36.0614 31.6392 31.664 36.0366 26.2395 36.0366C20.8151 36.0366 16.4177 31.6392 16.4177 26.2148C16.4177 20.7903 20.8151 16.3934 26.2395 16.3934Z" fill="#62D1BA" />
+                  </svg>
+                </label>
               </li>
             </ul>
           </div>
@@ -86,27 +98,46 @@
             <ul class="color__list user-field">
               <li class="color__item">
                 <input type="checkbox" class="color__checkbox checkbox visually-hidden" name="color-white" id="filter-color-white">
-                <label for="filter-color-white" class="color__label label label--checkbox">Белый</label>
+                <label for="filter-color-white" class="color__label label label--checkbox">Белый <svg class="checkbox-svg" width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="checkbox-svg__square" x="1" y="1" width="50" height="50" stroke="#444444" stroke-width="2" />
+                    <path class="checkbox-svg__check" d="M42.3704 17.3568L41.0098 16L21.5739 35.2863L11.9531 25.6916L10.5926 27.0485L20.2134 36.6432L21.5739 38L23.0316 36.6432L42.3704 17.3568Z" fill="black" />
+                  </svg>
+                </label>
               </li>
               <li class="color__item">
                 <input type="checkbox" class="color__checkbox checkbox visually-hidden" name="color-gray" id="filter-color-gray">
-                <label for="filter-color-gray" class="color__label label label--checkbox">Серый</label>
+                <label for="filter-color-gray" class="color__label label label--checkbox">Серый <svg class="checkbox-svg" width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="checkbox-svg__square" x="1" y="1" width="50" height="50" stroke="#444444" stroke-width="2" />
+                    <path class="checkbox-svg__check" d="M42.3704 17.3568L41.0098 16L21.5739 35.2863L11.9531 25.6916L10.5926 27.0485L20.2134 36.6432L21.5739 38L23.0316 36.6432L42.3704 17.3568Z" fill="black" />
+                  </svg></label>
               </li>
               <li class="color__item">
                 <input type="checkbox" class="color__checkbox checkbox visually-hidden" name="color-tiffany" id="filter-color-tiffany">
-                <label for="filter-color-tiffany" class="color__label label label--checkbox">«Тиффани»</label>
+                <label for="filter-color-tiffany" class="color__label label label--checkbox">«Тиффани» <svg class="checkbox-svg" width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="checkbox-svg__square" x="1" y="1" width="50" height="50" stroke="#444444" stroke-width="2" />
+                    <path class="checkbox-svg__check" d="M42.3704 17.3568L41.0098 16L21.5739 35.2863L11.9531 25.6916L10.5926 27.0485L20.2134 36.6432L21.5739 38L23.0316 36.6432L42.3704 17.3568Z" fill="black" />
+                  </svg></label>
               </li>
               <li class="color__item">
                 <input type="checkbox" class="color_checkbox checkbox visually-hidden" name="color-black" id="filter-color-black">
-                <label for="filter-color-black" class="color__label label label--checkbox">Черный</label>
+                <label for="filter-color-black" class="color__label label label--checkbox">Черный <svg class="checkbox-svg" width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="checkbox-svg__square" x="1" y="1" width="50" height="50" stroke="#444444" stroke-width="2" />
+                    <path class="checkbox-svg__check" d="M42.3704 17.3568L41.0098 16L21.5739 35.2863L11.9531 25.6916L10.5926 27.0485L20.2134 36.6432L21.5739 38L23.0316 36.6432L42.3704 17.3568Z" fill="black" />
+                  </svg></label>
               </li>
               <li class="color__item">
                 <input type="checkbox" class="color__checkbox checkbox visually-hidden" name="color-pink" id="filter-color-pink">
-                <label for="filter-color-pink" class="color__label label label--checkbox">Розовый</label>
+                <label for="filter-color-pink" class="color__label label label--checkbox">Розовый <svg class="checkbox-svg" width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="checkbox-svg__square" x="1" y="1" width="50" height="50" stroke="#444444" stroke-width="2" />
+                    <path class="checkbox-svg__check" d="M42.3704 17.3568L41.0098 16L21.5739 35.2863L11.9531 25.6916L10.5926 27.0485L20.2134 36.6432L21.5739 38L23.0316 36.6432L42.3704 17.3568Z" fill="black" />
+                  </svg></label>
               </li>
               <li class="color__item">
                 <input type="checkbox" class="color__checkbox checkbox visually-hidden" name="color-orange" id="filter-color-orange">
-                <label for="filter-color-orange" class="color__label label label--checkbox">Оранжевый</label>
+                <label for="filter-color-orange" class="color__label label label--checkbox">Оранжевый <svg class="checkbox-svg" width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="checkbox-svg__square" x="1" y="1" width="50" height="50" stroke="#444444" stroke-width="2" />
+                    <path class="checkbox-svg__check" d="M42.3704 17.3568L41.0098 16L21.5739 35.2863L11.9531 25.6916L10.5926 27.0485L20.2134 36.6432L21.5739 38L23.0316 36.6432L42.3704 17.3568Z" fill="black" />
+                  </svg></label>
               </li>
             </ul>
           </div>
