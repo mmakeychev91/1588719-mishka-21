@@ -6,7 +6,7 @@
   background-position: 50% -20px;
   background-repeat: no-repeat;
 
-  @media (max-width: 767px) and (min-resolution: 2dppx) {
+  @media (min-width: 768px) and (min-resolution: 2dppx) {
     background-image: url("../img/mobile/hero-mobile@2x.jpg");
     background-position: top;
     background-repeat: no-repeat;

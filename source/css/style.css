@@ -1233,7 +1233,7 @@ a {
   background-image: url("../img/mobile/hero-mobile.jpg");
   background-position: 50% -20px;
   background-repeat: no-repeat; }
-  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
+  @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
     .types-of-products {
       background-image: url("../img/mobile/hero-mobile@2x.jpg");
       background-position: top;
@@ -1952,7 +1952,7 @@ a {
   height: 52px;
   border: 1px solid #ececec;
   border-right: none;
-  background-image: url("../../img/genaral/icons/arrow-left.svg");
+  background-image: url("../img/genaral/icons/arrow-left.svg");
   background-repeat: no-repeat;
   background-position: 50%; }
   @media (min-width: 768px) {
@@ -1967,7 +1967,7 @@ a {
   width: 50%;
   height: 52px;
   border: 1px solid #ececec;
-  background-image: url("../../img/genaral/icons/arrow-right.svg");
+  background-image: url("../img/genaral/icons/arrow-right.svg");
   background-repeat: no-repeat;
   background-position: 50%; }
   @media (min-width: 768px) {
