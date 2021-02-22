@@ -862,7 +862,8 @@ a {
   cursor: pointer;
   border: none;
   background: none;
-  background-image: url("../img/genaral/icons/cart.svg"); }
+  background-image: url("../img/genaral/icons/cart.svg");
+  background-repeat: no-repeat; }
   @media (min-width: 768px) {
     .product__button {
       margin: 0;
